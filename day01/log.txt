@@ -1,0 +1,66 @@
+# День 1 — Работа с терминалом и файлами
+# Kali Linux, пользователь kali
+# Дата: 2025-05-07
+
+$ pwd
+/home/kali
+
+$ ls -la
+total 184
+drwx------ 16 kali kali  4096 May  7 22:04 .
+drwxr-xr-x  3 root root  4096 Apr 23 04:20 ..
+-rw-r--r--  1 kali kali   220 Apr 23 04:20 .bash_logout
+-rw-r--r--  1 kali kali  5551 Apr 23 04:20 .bashrc
+-rw-r--r--  1 kali kali  3526 Apr 23 04:20 .bashrc.original
+drwxrwxr-x 11 kali kali  4096 May  7 21:17 .cache
+drwxr-xr-x 12 kali kali  4096 May  7 10:42 .config
+drwxr-xr-x  3 kali kali  4096 May  7 21:16 Desktop
+-rw-r--r--  1 kali kali    35 May  7 10:40 .dmrc
+drwxr-xr-x  2 kali kali  4096 May  7 10:40 Documents
+drwxr-xr-x  2 kali kali  4096 May  7 10:40 Downloads
+-rw-r--r--  1 kali kali 11759 Apr 23 04:20 .face
+lrwxrwxrwx  1 kali kali     5 Apr 23 04:20 .face.icon -> .face
+drwx------  3 kali kali  4096 May  7 10:41 .gnupg
+-rw-------  1 kali kali     0 May  7 10:40 .ICEauthority
+drwxr-xr-x  3 kali kali  4096 Apr 23 04:20 .java
+drwxr-xr-x  5 kali kali  4096 May  7 10:40 .local
+drwx------  4 kali kali  4096 May  7 10:46 .mozilla
+drwxr-xr-x  2 kali kali  4096 May  7 10:40 Music
+drwxr-xr-x  2 kali kali  4096 May  7 10:40 Pictures
+-rw-r--r--  1 kali kali   807 Apr 23 04:20 .profile
+drwxr-xr-x  2 kali kali  4096 May  7 10:40 Public
+drwxr-xr-x  2 kali kali  4096 May  7 10:40 Templates
+-rw-r-----  1 kali kali     5 May  7 21:14 .vboxclient-clipboard-tty7-control.pid
+-rw-r-----  1 kali kali     4 May  7 21:14 .vboxclient-clipboard-tty7-service.pid
+-rw-r-----  1 kali kali     5 May  7 21:14 .vboxclient-display-svga-x11-tty7-control.pid
+-rw-r-----  1 kali kali     5 May  7 21:14 .vboxclient-display-svga-x11-tty7-service.pid
+-rw-r-----  1 kali kali     5 May  7 21:14 .vboxclient-draganddrop-tty7-control.pid
+-rw-r-----  1 kali kali     4 May  7 21:14 .vboxclient-draganddrop-tty7-service.pid
+-rw-r-----  1 kali kali     5 May  7 21:14 .vboxclient-hostversion-tty7-control.pid
+-rw-r-----  1 kali kali     5 May  7 21:14 .vboxclient-seamless-tty7-control.pid
+-rw-r-----  1 kali kali     4 May  7 21:14 .vboxclient-seamless-tty7-service.pid
+-rw-r-----  1 kali kali     5 May  7 21:14 .vboxclient-vmsvga-session-tty7-control.pid
+drwxr-xr-x  2 kali kali  4096 May  7 10:40 Videos
+-rw-------  1 kali kali    49 May  7 21:14 .Xauthority
+-rw-------  1 kali kali  9260 May  7 22:04 .xsession-errors
+-rw-------  1 kali kali  4542 May  7 10:50 .xsession-errors.old
+-rw-r--r--  1 kali kali   336 Apr 23 04:20 .zprofile
+-rw-------  1 kali kali    56 May  7 22:04 .zsh_history
+-rw-r--r--  1 kali kali 10868 Apr 23 04:20 .zshrc
+                                                                             
+$ cd /etc
+                                                                             
+$ cd ~
+
+$ mkdir test
+                                                                             
+$ cd test
+                                                                             
+$ touch file.txt
+                                                                             
+$ echo "Hello" > file.txt
+                                                                             
+$ cat file.txt
+Hello
+                                                                             
+$ rm file.txt
