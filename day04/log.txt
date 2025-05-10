@@ -1,0 +1,46 @@
+# День 4 —  Работа с архивами и сжатием
+# Kali Linux, пользователь kali
+# Дата: 2025-05-10
+
+
+
+$ mkdir archive-test
+                                                                             
+$ cd archive-test                    
+                                                                             
+$ echo 'File 1' > file1.txt
+                                                                             
+$ echo 'File 2' > file2.txt
+                                                                             
+$ tar -cvf archive.tar file1.txt file2.txt
+file1.txt
+file2.txt
+                                                                             
+$ tar -tf archive.tar                     
+file1.txt
+file2.txt
+
+$ mkdir unpacked    
+                                                                             
+$ tar -xvf archive.tar -C unpacked
+file1.txt
+file2.txt
+
+$ cd unpacked  
+
+$ gzip file1.txt
+
+$ gunzip file1.txt.gz
+
+$ zip files.zip file1.txt file2.txt
+  adding: file1.txt (stored 0%)
+  adding: file2.txt (stored 0%)
+
+$ rm file1.txt
+
+$ rm file2.txt            
+                                                                             
+$ unzip files.zip
+Archive:  files.zip
+ extracting: file1.txt               
+ extracting: file2.txt    

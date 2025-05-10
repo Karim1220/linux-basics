@@ -1,0 +1,38 @@
+# День 3 —  Работа с процессами
+# Kali Linux, пользователь kali
+# Дата: 2025-05-10
+
+
+$ ps 
+    PID TTY          TIME CMD
+  67918 pts/1    00:00:00 zsh
+  67977 pts/1    00:00:00 ps
+
+$ ps aux
+
+$ top
+
+$ htop
+
+$ sleep 60 &           
+[1] 70200
+
+$ jobs
+[1]  + running    sleep 60
+
+$ fg %1     
+[1]  + running    sleep 60
+^C
+
+$ sleep 100 & 
+[1] 73460
+
+$ kill 73460  
+                                                                             
+[1]  + terminated  sleep 100
+
+$ sleep 100 & 
+[1] 74127
+                                                                             
+$ killall sleep 
+[1]  + terminated  sleep 100   
