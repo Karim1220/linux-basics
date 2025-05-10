@@ -1,0 +1,49 @@
+# День 2 —  Основы работы с файлами и правами доступа в Linux
+# Kali Linux, пользователь kali
+# Дата: 2025-05-10
+
+
+$ mkdir test    
+
+$ cd test    
+
+$ touch file0.txt
+                                                                             
+$ ls -l file0.txt
+-rw-rw-r-- 1 kali kali 0 May  9 19:50 file0.txt
+                                                                             
+$ chmod 755 file0.txt
+                                                                             
+$ ls -l file0.txt
+-rwxr-xr-x 1 kali kali 0 May  9 19:50 file0.txt
+
+$ sudo chown kali:kali file0.txt
+[sudo] password for kali: 
+                                                                             
+$ touch script.sh   
+                                                                             
+$ chmod +x script.sh
+                                                                             
+$ ls -l script.sh
+-rwxrwxr-x 1 kali kali 0 May  9 20:02 script.sh
+
+
+$ touch file.txt
+                                                                             
+$ echo 'Hello, Linux!' > file.txt
+
+$ cat file.txt     
+Hello, Linux!
+
+$ nano file.txt
+                                                                             
+$ cat file.txt                       
+Goodbye, Linux!
+                                                                             
+$ ls -l file.txt 
+-rw-rw-r-- 1 kali kali 16 May  9 20:21 file.txt
+                                                                             
+$ chmod +x file.txt 
+                                                                             
+$ ls -l file.txt
+-rwxrwxr-x 1 kali kali 16 May  9 20:21 file.txt
